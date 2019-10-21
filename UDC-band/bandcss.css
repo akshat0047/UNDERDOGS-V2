@@ -451,11 +451,11 @@ height:auto;
     top:18%;
     right:6%;
     width:400px;
-    height:0px;
+    height:220px !important;
     background-color: black;
     opacity:0;
     overflow: hidden;
-    padding-top: 4%;
+    padding-top: 24px;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 8px;
@@ -465,7 +465,7 @@ height:auto;
   }
   .intro-msg{
     font-family: 'Caveat', cursive;
-    font-size: 1.3em;
+    font-size: 28px;
     opacity: 1;
     color:white;
     word-spacing: 0.20em;
@@ -596,11 +596,11 @@ height:auto;
     top:18%;
     right:6%;
     width:400px;
-    height:0px;
+    height: 220px;
     background-color: black;
     opacity:0;
     overflow: hidden;
-    padding-top: 13px;
+    padding-top: 24px;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 8px;
@@ -612,7 +612,7 @@ height:auto;
   }
   .intro-msg{
     font-family: 'Caveat', cursive;
-    font-size: 1.3em;
+    font-size: 28px;
     opacity: 1;
     color:white;
     word-spacing: 0.20em;
