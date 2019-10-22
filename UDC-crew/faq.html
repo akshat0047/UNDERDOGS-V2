@@ -21,6 +21,13 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
     <style>
       body {
         position: relative;
@@ -52,11 +59,32 @@
         left: 0px;
         right: 0px;
       }
+
+      .accordion{
+        padding: 50px;
+      }
+
+      .btn{
+        color: #000;
+      }
+
+      .btn:hover{
+        text-decoration: none;
+      }
+
+      .card{
+        border: none;
+      }
+
+      .card-body{
+        background: #000;
+        color: #fff;
+      }
     </style>
   </head>
 
   <body>
-    <div class="faq">
+    <!-- <div class="faq">
       <h2>FAQ's</h2>
       <br />
       <h3>Does the crew focus on some particular dance styles only?</h3>
@@ -99,6 +127,85 @@
         restricted to be a part of any club, but an individual cannot be a part
         of some other *crew* being a part of UDC.
       </p>
+    </div> -->
+    <div class="accordion" id="accordionExample" class="faq">
+      <h1 style="color:#fff">Frequently Asked Questions</h1>
+      <br/>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Does the crew focus on some particular dance styles only?
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            We try to be versatile in our performances and would love to have dancers with different fortes.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How often does the crew have rehearsals and what are the timings?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Rehearsals are held on weekdays. All the crew members are supposed to report for practice as soon as their classes end. There are rehearsals on weekends outside the college premises when preparing for competitions.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How often are auditions held?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Auditions are open to university students only. We have our auditions at the beginning of every year of college. Announcements are made for the same. If we have re-auditions, the dates are announced on our official Instagram and Facebook Crew IDs. Forms are made available at this website only. An audition is supposed to be one minute long. Performer can showcase any dance style.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Who will bear the expenses for the Crew Jersey?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            The crew members pay for the complete jersey and purchase it themselves.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Is UDC a part of the University Cultural Club or Society?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            No, we're not a part of any cultural club. Crew members are not restricted to be a part of any club, but an individual cannot be a part of some other *crew* being a part of UDC.
+          </div>
+        </div>
+      </div>
     </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
