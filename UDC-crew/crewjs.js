@@ -30,7 +30,7 @@ function home() {
   document.getElementsByClassName("intro-msg-box")[0].style.opacity = "0.8";
   document.getElementsByClassName("intro-msg-box")[0].style.transform =
     "rotateZ(360deg)";
-  document.getElementsByClassName("intro-msg-box")[0].style.height = "200px";
+  document.getElementsByClassName("intro-msg-box")[0].style.height = "175px";
 }
 
 //REMOVING INTRO BOX ON scroll

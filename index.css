@@ -80,6 +80,7 @@ a:hover {
     white-space: nowrap;
     font-size: 2em;
     cursor: pointer;
+	margin-bottom: 0;
   }
   .text-background {
     position: relative;
@@ -130,14 +131,15 @@ a:hover {
     white-space: nowrap;
     font-size: 3em;
     cursor: pointer;
+	margin-bottom: 0px;
   }
   .text-background {
     position: relative;
     width: 40%;
     height: auto;
     top: 55%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: #000;
+    background-color: rgba(155, 155, 155, 0.7);
     padding: 10px;
     cursor: pointer;
   }
