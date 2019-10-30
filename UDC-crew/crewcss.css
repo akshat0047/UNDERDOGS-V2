@@ -53,6 +53,9 @@ div {
 }
 .foot-head {
   font-family: "Permanent Marker", cursive;
+  border-bottom: 1px solid #646464;
+  padding-bottom: 5px;
+  color: #a3a3a3;
 }
 .quote {
   font-family: "Caveat", cursive;
@@ -697,15 +700,12 @@ div {
     top: 18%;
     right: 6%;
     width: 400px;
-    height: 0px;
-    background-color: black;
+	height: 0px;
+    background-color: #e3e3e3;
     opacity: 0;
     overflow: hidden;
-    padding-top: 4%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    box-shadow: 0px 0px 2px 2px rgba(89, 89, 89, 0.3);
     transition: all 1s;
     transform: rotateZ(0deg);
   }
@@ -713,8 +713,9 @@ div {
     font-family: "Caveat", cursive;
     font-size: 1.2em;
     opacity: 1;
-    color: white;
+    color: #000;
     word-spacing: 0.2em;
+	margin-bottom: 0px;
   }
   .content-row {
     left: 1%;
@@ -937,9 +938,15 @@ div {
   padding-bottom: 20px;
 }
 .card-box {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  transition: box-shadow 0.5s;
-  cursor: pointer;
+  
+	transition: box-shadow 0.5s;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.card-body {
+    color: #fff;
+    background: #000;
 }
 .card-box:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
