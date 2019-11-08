@@ -146,6 +146,7 @@ div {
 #enroll-button {
   visibility: hidden;
   opacity: 0;
+  background: linear-gradient( to right, rgba(179, 55, 113, 1), rgba(44, 58, 71, 1) );
 }
 #top {
   visibility: hidden;
@@ -332,6 +333,9 @@ div {
   .section-heading {
     padding-top: 20px;
     color: white;
+    padding-bottom: 20px;
+    max-width: 240px !important;
+    margin: 0 auto;
   }
   /*GALLERY CSS*/
   .pagin {
@@ -468,6 +472,9 @@ div {
   .section-heading {
     padding-top: 45px;
     color: white;
+    padding-bottom: 20px;
+    max-width: 240px !important;
+    margin: 0 auto;
   }
   /*GALLERY CSS*/
   .pagin {
@@ -529,17 +536,19 @@ div {
     background-color: black;
     opacity: 0;
     overflow: hidden;
-    padding-top: 4%;
+    padding-top: 13px;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 8px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
     transition: all 1s;
     transform: rotateZ(0deg);
+    font: caption;
+    line-height: 34px;
   }
   .intro-msg {
     font-family: "Caveat", cursive;
-    font-size: 1.2em;
+    font-size: 1.3em;
     opacity: 1;
     color: white;
     word-spacing: 0.2em;
@@ -635,6 +644,9 @@ div {
   .section-heading {
     padding-top: 85px;
     color: white;
+    padding-bottom: 20px;
+    max-width: 240px !important;
+    margin: 0 auto;
   }
 
   .quote {
@@ -701,17 +713,19 @@ div {
     background-color: black;
     opacity: 0;
     overflow: hidden;
-    padding-top: 4%;
+    padding-top: 13px;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 8px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
     transition: all 1s;
     transform: rotateZ(0deg);
+    font: caption;
+    line-height: 34px;
   }
   .intro-msg {
     font-family: "Caveat", cursive;
-    font-size: 1.2em;
+    font-size: 28px;
     opacity: 1;
     color: white;
     word-spacing: 0.2em;
@@ -806,6 +820,9 @@ div {
   .section-heading {
     padding-top: 40px;
     color: white;
+    padding-bottom: 20px;
+    max-width: 240px !important;
+    margin: 0 auto;
   }
 
   .quote {
@@ -821,19 +838,22 @@ div {
 
 .section-heading {
   border-bottom: 3px solid white;
+  padding-bottom: 20px;
+  max-width: 240px !important;
+  margin: 0 auto;
 }
 
 .btn-enroll {
   opacity: 0.8;
-  background-color: black;
+  background-color: #000;
   color: white;
   transition: color 0.5s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: colorswap;
+  /**animation-name: colorswap;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;**/
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -1117,4 +1137,20 @@ div {
   margin: auto;
   width: 100%;
   height: auto;
+}
+a.nav-link.smooth-scroll:hover {
+  background-color: white;
+  color: black !important;
+  opacity: .8;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+a.btn.btn-lg.btn-block.btn-enroll {
+  font-size: 2.5em;
+  color: #f5deb3;
+}
+.navbar-nav{
+  font-size: 18px;
 }
