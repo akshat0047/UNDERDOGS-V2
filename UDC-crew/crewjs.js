@@ -190,7 +190,25 @@ function home_gallery() {
 }
 
 $(document).ready(function() {
-  $(".member-carousel").slick({
+  var members = ""
+  $.ajax({
+          headers: {'secret-key': '$2b$10$5wdP1w5Yckb1MCKHY8xQWuEEtJF4mEf9tCAeBv2sZIAk2D4/sC34y'},
+          url: 'https://api.jsonbin.io/b/5ed26dba7741ef56a564b3a8/latest',
+          type: 'GET',
+          dataType: 'json',
+          success: function(data) { 
+          $.each(data['members'], function(index, value){
+          members += '<div class="slick-item-custom"> <img src="' + value['img'] + '" class="member-pic">' +
+                       '<br />' +
+                       '<div class="text-center member-body">' +
+                         '<p><b>NAME: </b>' + value['name'] + '</p>' +
+                         '<p><b>COURSE: </b>'  +  value['course']   +  '</p>' +
+                       '</div>' +
+                     '</div>'
+          });
+              $("#members").html(members);
+          
+          $(".member-carousel").slick({
     dots: false,
     infinite: true,
     speed: 2000,
@@ -226,5 +244,8 @@ $(document).ready(function() {
         }
       }
     ]
-  });
+  });     
+    },
+          error: function() { alert('Unable To Fetch'); },
+        });
 });
